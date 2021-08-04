@@ -1,0 +1,17 @@
+{
+  "name": "okrakyc",
+  "version": "1.0.0",
+  "description": "A backend api to integrate a KYC app using Okra",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Node",
+    "KYC",
+    "Fintech"
+  ],
+  "author": "Beveloper",
+  "license": "ISC"
+}
