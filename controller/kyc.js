@@ -1,13 +1,11 @@
 const axios = require('axios');
 const qs = require('qs');
 
- const secret_key = 'your secret key';
-//stringify bvn data 
+const secret_key = 'your secret key';
 const bvnData = qs.stringify({
   "bvn": "your bvn",
 });
 
-//stringify nin data
 const ninData = qs.stringify({
   "nin" : "your nin"
 });
@@ -16,7 +14,6 @@ const ninData = qs.stringify({
 const bvnUrl = 'https://api.okra.ng/v2/products/kyc/bvn-verify';
 const ninUrl = 'https://api.okra.ng/v2/products/kyc/nin-verify';
 
-//retreive BVN details
 exports.bvnCheck = async (req, res) => {
 	try {
 		const response = await axios({
@@ -34,7 +31,6 @@ exports.bvnCheck = async (req, res) => {
 	}
 }
 
-//retreive NIN details
 exports.ninCheck = async (req, res) => {
 	try {
 		const response = await axios({
