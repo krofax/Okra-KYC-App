@@ -4,7 +4,7 @@ const qs = require('qs');
 const secret_key = 'YOUR SECRET KEY';
 //stringify bvn data 
 const bvnData = qs.stringify({
-  "bvn": "Your BVN DATA",
+  "bvn": "Your BVN Number",
 });
 
 const bvnUrl = 'https://api.okra.ng/v2/products/kyc/bvn-verify';
