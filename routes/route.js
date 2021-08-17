@@ -6,6 +6,5 @@ const router = express.Router();
 
 router
   .post("/bvn", bvnRoute.bvnCheck)
-  .post("/nin", bvnRoute.ninCheck)
 
 module.exports = router;
